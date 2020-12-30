@@ -4,6 +4,16 @@
 
 
 
+## Requirements
+
+아래 명령을 이용하여 필요한 패키지를 설치합니다.
+
+```bash
+pip install -r requirements.txt
+```
+
+
+
 ## Examples
 
 파이썬 버전의 예제코드를 돌리려면 아래 명령을 입력합니다.
