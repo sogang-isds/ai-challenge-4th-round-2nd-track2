@@ -1,2 +1,5 @@
 SpeechRecognition
 pydub
+onnxruntime
+onnx
+transformers
