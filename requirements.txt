@@ -1,6 +1,5 @@
 SpeechRecognition
 pydub
 onnxruntime
-onnx
 transformers
 psutil
