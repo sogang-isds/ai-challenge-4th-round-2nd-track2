@@ -3,3 +3,4 @@ pydub
 onnxruntime
 onnx
 transformers
+psutil

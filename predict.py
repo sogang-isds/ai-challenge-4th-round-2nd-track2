@@ -42,8 +42,8 @@ while True:
         text = get_word()
 
         # Inputs are provided through numpy array
-        model_inputs = tokenizer.encode_plus(text, return_tensors="pt")
-        inputs_onnx = {k: v.cpu().detach().numpy() for k, v in model_inputs.items()}
+        model_inputs = tokenizer.encode_plus(text)
+        inputs_onnx = {k: np.array(v).reshape(1, -1) for k, v in model_inputs.items()}
 
         # Run the model (None = get all the outputs)
         logits = onnx_model.run(None, inputs_onnx)
