@@ -1,18 +1,45 @@
-# 인공지능 그랜드 챌린지 4차 대회 2단계 트랙2 API
+# 인공지능 그랜드 챌린지 4차 대회 2단계 트랙2
 
-그랜드 챌린지 4차 대회 2단계에서 수행했던 모델을 API 버전으로 공개합니다. 리더보드에서 가장 높은 성적을 보였던 모델을 API 버전으로 제작하였습니다.
-
-
+그랜드 챌린지 4차 대회 2단계에서 수행했던 모델을 공개합니다. 리더보드에서 가장 높은 성적을 보였던 모델을 API 버전으로 제작하였습니다.
 
 ## Requirements
 
-아래 명령을 이용하여 필요한 패키지를 설치합니다.
+* Python >= 3.6
 
-```bash
-pip install -r requirements.txt
-```
+### Git LFS
 
+모델파일과 샘플데이터를 받기 위해서는 Git LFS가 필요합니다. 없을 경우 아래 링크를 이용해 설치합니다.
 
+* [Git LFS Installation](https://github.com/git-lfs/git-lfs/wiki/Installation)
+
+## Installation
+
+* 아래 명령을 이용해 소스코드를 받습니다.
+
+    ```
+    https://github.com/sogang-isds/ai-challenge-4th-round-2nd-track2.git
+    ```
+
+* Git LFS가 자동으로 되지 않을 경우 아래 명령을 이용해 LFS 파일들을 내려받습니다.
+
+    ```bash
+    cd ai-challenge-4th-round-2nd-track2
+    git lfs pull
+    ```
+
+* Python 가상환경을 설치합니다.
+
+    ```bash
+    cd ai-challenge-4th-round-2nd-track2
+    virtualenv -p python3 myenv
+    source myenv/bin/activate
+    ```
+
+* Python 패키지를 설치합니다.
+
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 ## Examples
 
@@ -59,8 +86,6 @@ python api_example.py
 }
 ```
 
-
-
 ## 응답 데이터
 
 ### code
@@ -76,4 +101,8 @@ python api_example.py
 - 02051 : 갈취 또는 공갈
 - 020811 : 직장 내 괴롭힘
 - 020819 : 기타 괴롭힘
+
+## Copyright
+
+본 프로젝트는 공개소프트웨어를 이용하여 개발하였으나, 데이터 처리 방법 및 모델 구현 등에 대한 저작권은 [서강대학교 지능형 음성대화 인터페이스 연구실](https://isds.sogang.ac.kr/)에 있습니다.
 
