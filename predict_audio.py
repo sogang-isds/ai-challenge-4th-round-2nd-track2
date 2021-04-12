@@ -4,6 +4,8 @@ from psutil import cpu_count
 import numpy as np
 import time
 
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+
 # Constants from the performance optimization available in onnxruntime
 # It needs to be done before importing onnxruntime
 environ["OMP_NUM_THREADS"] = str(cpu_count(logical=True))
