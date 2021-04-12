@@ -10,6 +10,8 @@ def split_audio(file, dest_path='./tmp'):
         shutil.rmtree(dest_path)
         os.mkdir(dest_path)
 
+    print('\nAudio splitting...')
+
     sound_file = AudioSegment.from_wav(file)
 
     audio_chunks = split_on_silence(sound_file,
@@ -24,7 +26,7 @@ def split_audio(file, dest_path='./tmp'):
         duration = chunk.duration_seconds
         end_pos = start_pos + duration
         out_file = os.path.join(dest_path, "chunk_{:03d}.wav".format(i))
-        print(f"exporting : {out_file}, {start_pos:.2f} - {end_pos:.2f}")
+        print(f"splitted : {out_file}, {start_pos:.2f} - {end_pos:.2f}")
         chunk.export(out_file, format="wav")
 
         positions.append((start_pos, end_pos))
