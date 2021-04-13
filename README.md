@@ -92,6 +92,8 @@
 
 - 실행 결과는 아래와 같습니다.
 
+  ![predict_video_demo](assets/predict_audio_demo.gif)
+
   ```
   Audio splitting...
   splitted : ./tmp/chunk_000.wav, 0.00 - 3.29
@@ -182,9 +184,6 @@ python api_example.py
 
 - E000 : 성공
 
-### class code
-
-- 
 
 ## Copyright
 
