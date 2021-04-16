@@ -30,7 +30,6 @@ label_list = [x for x, y in label_dict.items()]
 
 
 curdir = os.path.dirname(os.path.realpath(__file__))
-model_path = os.path.join(curdir, 'models/test')
 onnx_path = os.path.join(curdir, 'models/model_fp16.onnx')
 
 tokenizer = AutoTokenizer.from_pretrained('beomi/kcbert-base')
